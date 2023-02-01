@@ -7,7 +7,7 @@ for _ in range(m):
     u,v = map(int,input().split())
     a[u].append(v)
     a[v].append(u)
-for i in range(1,n):
+for i in range(1,n+1):
     if a[i]:
         a[i] = sorted(a[i])
 visited = [False] * (n+1)
