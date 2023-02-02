@@ -12,7 +12,7 @@ tmp[0][0][0] = 1
 while q:
     u = q.popleft()
     x,y = u[0],u[1]
-    # print(tmp[x][y])
+    # print(tmp[x][y]) # BFS는 경로길이를 하나씩 늘려가며 최단경로를 찾는 방법!!
     if x==n-1 and y ==m-1:
         break
     for i in range(4):
