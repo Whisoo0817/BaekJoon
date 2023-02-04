@@ -1,6 +1,6 @@
 N,K = map(int,input().split())
 
-arr = [0] * (15) # 1차원
+arr = [0] * (100001) # 1차원
 
 for i in range(N): # 아이템을 하나씩 추가
     w,v = map(int,input().split())
