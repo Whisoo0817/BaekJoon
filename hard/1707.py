@@ -1,3 +1,4 @@
+# 이분그래프 BFS
 import sys
 from collections import deque
 input = sys.stdin.readline
