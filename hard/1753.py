@@ -9,11 +9,11 @@ edge = [[] for _ in range(V+1)]
 heap = []
 for _ in range(E):
     u, v, w = map(int, input().split())
-    edge[u].append([w, v])
+    edge[u].append([w, v]) # 인자 순서 주의
 
 def Dikstra(start):
     dist[start] = 0
-    heapq.heappush(heap,(0,start))
+    heapq.heappush(heap,(0,start)) # 최소힙에서 정렬해야하므로 첫번째 인자가 현재 dist
     while heap:
         wei, now = heapq.heappop(heap)
         if dist[now] < wei:
