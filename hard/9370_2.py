@@ -18,11 +18,16 @@ def Dikstra(start):
                     heapq.heappush(heap, (next_wei, -1, next_node))
                     includeGH[next_node] = -1
                 else:
-                    if next_wei == dist[next_node]:
-                        flag = min(includeGH[next_node], flag)
-                    heapq.heappush(heap, (next_wei, flag, next_node))
-                    includeGH[next_node] = flag
+                    if next_wei == dist[next_node] and includeGH[next_node]!=flag:# -1,0
+                        heapq.heappush(heap, (next_wei, -1, next_node))
+                        includeGH[next_node] = -1
+                    elif next_wei == dist[next_node] and includeGH[next_node]==flag:
+                        continue # 이거 안하면 시간초과
+                    else:
+                        heapq.heappush(heap, (next_wei, flag, next_node))
+                        includeGH[next_node] = flag
                 dist[next_node] = next_wei
+
     # print(includeGH)
     return includeGH
 for _ in range(int(input())):
