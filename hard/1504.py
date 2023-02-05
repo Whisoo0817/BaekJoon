@@ -12,7 +12,7 @@ def Dikstra(start, end):
     dist = [1e9] * (N+1)
     dist[start] = 0
     heap = []
-    heapq.heappush(heap, (0, start))
+    heapq.heappush(heap, (0, start)) # 최소힙에서 정렬해야하므로 첫번째 인자가 현재 dist
     while heap:
         wei, now = heapq.heappop(heap)
         if wei > dist[now]:
