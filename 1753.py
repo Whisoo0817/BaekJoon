@@ -15,15 +15,14 @@ def Dikstra(start):
     dist[start] = 0
     heapq.heappush(heap,(0,start))
     while heap:
-        print(heap)
         wei, now = heapq.heappop(heap)
         if dist[now] < wei:
             continue
         for w, next_node in edge[now]:
             next_wei = w + wei
-            if next_wei < dist[next_node]:
+            if next_wei < dist[next_node]: #새로운 최단거리가 갱신되었다(sub-problem)
                 dist[next_node] = next_wei
-                heapq.heappush(heap, (next_wei, next_node))
+                heapq.heappush(heap, (next_wei, next_node)) # =>그 노드의 인접노드들도 갱신하자
 Dikstra(K)
 for i in range(1,V+1):
     print("INF" if dist[i]==1e9 else dist[i])
