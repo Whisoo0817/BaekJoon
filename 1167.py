@@ -1,3 +1,4 @@
+# 트리의 지름: 내가 푼 풀이가 좀 더 빠름
 import sys
 input= sys.stdin.readline
 v = int(input())
