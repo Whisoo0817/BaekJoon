@@ -7,7 +7,7 @@ for i in range(m):
     a, b, c = map(int, input().split())
     bus[a].append([c, b])
 d = [[1e9]*(n+1) for _ in range(n+1)]
-for i in range(n+1): # 출발지 == 도착지
+for i in range(n+1): # 출발지 = 도착지
     d[i][i] = 0
 for i in range(1,n+1):
     for j in bus[i]:
