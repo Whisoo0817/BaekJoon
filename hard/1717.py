@@ -1,4 +1,4 @@
-# union 굳이 진짜 합칠 필요 없고 부모만 바꿔주기
+# union 굳이 합칠 필요 없고 부모만 바꿔주기
 import sys
 sys.setrecursionlimit(10**6)
 input = sys.stdin.readline
