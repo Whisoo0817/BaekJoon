@@ -1,3 +1,5 @@
+#최소신장트리: 전체 요소 연결 => Kruskal / Prim
+#   Kruskal은 간선들을 정렬해야해서 간선이 적을 때 사용
 import sys
 from collections import deque
 input = sys.stdin.readline
