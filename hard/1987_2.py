@@ -1,3 +1,7 @@
+# DFS로 풀면 pypy3에서만 통과
+# 중복 되는 경우는 오직 같은 위치(x,y)에 같은 문자열(z)일 때만임
+# (다른 경로로 와도 상관 없다는 것이 중요)
+# => set 사용  (set에서 pop하면 무작위로 뽑지만 상관 없음)
 import sys
 input = sys.stdin.readline
 r, c = map(int,input().split())
