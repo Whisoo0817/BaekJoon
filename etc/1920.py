@@ -2,7 +2,7 @@ import sys
 sys.setrecursionlimit(10**6)
 input = sys.stdin.readline
 n = int(input())
-a = list(map(int,input().split()))
+a = list(map(int, input().split()))
 m = int(input())
 check = list(map(int,input().split()))
 a.sort()
