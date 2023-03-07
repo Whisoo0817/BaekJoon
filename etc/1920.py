@@ -4,8 +4,9 @@ input = sys.stdin.readline
 n = int(input())
 a = list(map(int, input().split()))
 m = int(input())
-check = list(map(int,input().split()))
+check = list(map(int, input().split()))
 a.sort()
+
 for i in check:
     start = 0
     end = n - 1
