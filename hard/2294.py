@@ -8,6 +8,7 @@ dp = [1e9]*100001
 visited = [False]*100001
 for coin in coins:
     dp[coin] = 1
+
 def sol(x):
     visited[x] = True
     for coin in coins:
