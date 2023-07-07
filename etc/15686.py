@@ -20,6 +20,7 @@ for comb in combinations(chicken, m):
             dis = min(dis, abs(chi[0]-home[0]) + abs(chi[1]-home[1]))
         chi_dis += dis
     res = min(res, chi_dis)
+    
 print(res)
 
 
