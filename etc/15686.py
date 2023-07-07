@@ -1,6 +1,7 @@
 import sys
 input = sys.stdin.readline
 from itertools import combinations
+
 n, m = map(int, input().split())
 city = [list(map(int, input().split())) for _ in range(n)]
 res = 1e9
