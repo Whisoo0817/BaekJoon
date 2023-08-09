@@ -1,3 +1,6 @@
+# 해시를 사용하면 좋은 경우
+# 1. list[1]은 되지만 list["123"]은 안됨
+# 2. Dictionary의 시간복잡도는 대부분 O(1)
 import sys
 input = sys.stdin.readline
 from collections import deque
